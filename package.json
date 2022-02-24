@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "axios": "*",
+    "bcryptjs": "^2.4.3",
     "body-parser": "*",
     "express": "*",
     "jsonwebtoken": "*",
@@ -13,7 +14,8 @@
     "mongoose": "*",
     "mongoose-currency": "^0.2.0",
     "nodemon": "*",
-    "url-parse": "*"
+    "url-parse": "*",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "cors": "^2.8.4",
