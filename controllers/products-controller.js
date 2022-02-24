@@ -10,15 +10,14 @@ module.exports = {
             .catch((err) => console.log(err));
     },
     show: function(req,res) {
-        Product.findOne({id: req.params.id}, (err, task) => {
-            console.log()
+        Product.findOne({id: req.params.id}, (err, product) => {
             if (err) {
                 return res.status(500).json();
             }
-            if (!task) {
+            if (!product) {
                 return res.status(404).json();
             }
-            return res.status(200).json({task: task});
+            return res.status(200).json(product);
         })
     }
 }
