@@ -14,7 +14,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.json())
 
 app.use('/products', productsRoutes);
-app.use('/users', userRoutes);
+app.use('/', userRoutes);
 
 app.get('/', (req, res) => {
    return res.send('hi')

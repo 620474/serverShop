@@ -7,7 +7,7 @@ var router = express.Router();
 router.use(bodyParser.json());
 
 
-router.get('/', (req, res, next) => {
+router.get('/users', (req, res, next) => {
     User.find({}, (err, users) => {
         if (err) {
             return next(err);
@@ -19,7 +19,7 @@ router.get('/', (req, res, next) => {
     })
 });
 
-router.post('/signup', async (req, res, next) => {
+router.post('/register', async (req, res, next) => {
 
     try {
         let user = new User({
