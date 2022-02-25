@@ -1,5 +1,4 @@
 const Product = require('../models/products-model');
-const moment = require('moment');
 
 module.exports = {
     index: function (req,res) {
