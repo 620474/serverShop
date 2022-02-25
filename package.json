@@ -15,9 +15,7 @@
     "mongoose-currency": "^0.2.0",
     "nodemon": "*",
     "url-parse": "*",
-    "validator": "^13.7.0"
-  },
-  "devDependencies": {
+    "validator": "^13.7.0",
     "cors": "^2.8.4",
     "morgan": "^1.9.0"
   }
