@@ -13,6 +13,9 @@ const productSchema = new Schema({
         type: String,
         required: true
     },
+    category: {
+        type: Object
+    },
     id: {
         type: String,
         required: true,
@@ -26,7 +29,8 @@ const productSchema = new Schema({
         type: String
     },
     updatedAt: {
-        type: Date
+        type: String,
+        default: new Date(1)
     },
     images: {
         type: Array
