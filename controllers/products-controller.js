@@ -9,8 +9,7 @@ module.exports = {
         Product.find({})
             .then((products) => {
                 let result = paginate(products,page,limit)
-                if(!result) result = products
-                res.status(200).json(products)
+                res.status(200).json(result.results)
             })
             .catch((err) => console.log(err));
     },

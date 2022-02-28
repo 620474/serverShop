@@ -1,8 +1,12 @@
 function paginate(model, page, limit) {
+    const result = {};
+    if (!limit && !page) {
+        result.results = model;
+        return result;
+    }
+
     const startIndex = (page - 1) * limit;
     const endIndex = page * limit;
-
-    const result = {};
 
     if (endIndex < model.length) {
         result.next = {
